@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LotteryService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9060c716fd882bba4657661a714afa84ab7361a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37fc85e5aec90795b159b7070753f9bca6c10de8")]
 [assembly: System.Reflection.AssemblyProductAttribute("LotteryService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LotteryService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

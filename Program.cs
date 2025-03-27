@@ -1,3 +1,4 @@
+using LotteryService.Installers;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "LotteryService", Version = "v1" });
 });
+
+builder.Services.InstallServiceInAssembly(builder.Configuration);
 
 var app = builder.Build();
 
