@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace LoteryService.Controllers
+namespace LotteryService.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

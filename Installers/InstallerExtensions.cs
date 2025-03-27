@@ -1,4 +1,4 @@
-namespace LoteryService.Installers
+namespace LotteryService.Installers
 {
     public static class InstallerExtensions
     {
