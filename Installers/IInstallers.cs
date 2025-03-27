@@ -5,4 +5,4 @@ namespace LoteryService.Installers
     {
         void InstallServices(IServiceCollection services);
     }
-}
+}https://github.com/nattapongnoktet/LotteryService.git
