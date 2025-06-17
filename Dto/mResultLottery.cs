@@ -26,7 +26,7 @@ namespace LotteryService.Dto;
         public int status { get; set; }
         public string? sheetId { get; set; }
         public Data? data { get; set; }
-        public object? n3 { get; set; }
+        public N3? n3 { get; set; }
     }
 
         public class ResponseStatus
@@ -61,4 +61,36 @@ namespace LotteryService.Dto;
         public NumberData? last3f { get; set; }
         public NumberData? last3b { get; set; }
         public NumberData? near1 { get; set; }
+    }
+
+     public class N3
+    {
+        public Straight3? straight3 { get; set; }
+        public Shuffle3? shuffle3 { get; set; }
+        public Straight2? straight2 { get; set; }
+        public Special? special { get; set; }
+    }
+
+     public class Shuffle3
+    {
+        public decimal? price { get; set; }
+        public List<Number>? number { get; set; }
+    }
+
+    public class Special
+    {
+       public decimal? price { get; set; }
+        public List<Number>? number { get; set; }
+    }
+
+    public class Straight2
+    {
+        public decimal? price { get; set; }
+        public List<Number>? number { get; set; }
+    }
+
+    public class Straight3
+    {
+       public decimal? price { get; set; }
+        public List<Number>? number { get; set; }
     }

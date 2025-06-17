@@ -25,7 +25,7 @@ public class LotteryServices : ILotteryService
             {
 
                 // Create request object
-                var requestData = new { date = "16", month = "03", year = "2025" };
+                var requestData = new { date = "16", month = "06", year = "2025" };
 
                 // Serialize object to JSON
                 string jsonPayload = JsonConvert.SerializeObject(requestData);

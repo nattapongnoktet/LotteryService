@@ -1,4 +1,6 @@
+using LotteryService.Data;
 using LotteryService.Installers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "LotteryService", Version = "v1" });
 });
+
+builder.Services.AddDbContext<DatabaseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Database_lottery")));
 
 builder.Services.InstallServiceInAssembly(builder.Configuration);
 
